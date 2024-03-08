@@ -1,0 +1,259 @@
+/*Style*/
+
+
+
+body{
+    background: #110A25;
+    color: #F3F6FF;
+    overflow-x: hidden;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.navegação{
+    position: fixed;    
+    right: 0px;
+    top: 25px;;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 16%;
+    border-bottom: 1px solid transparent;
+    transition: all .40s ease; 
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    background: transparent;
+    padding: 22px 16%;
+    border-bottom: 1px solid transparent;
+    transition: all .40s ease;
+}
+
+.nav a {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    padding: 10px 25px;
+    margin: 0 2px;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+
+.nav a:hover{
+    background:#7B207E;
+    color: #F3F6FF;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: linear-gradient(69deg, #7B207E 22.26%, #110A25 22.26%);
+}
+
+
+.home-text > h1{
+    width: 754px;
+    height: 235px;
+    flex-shrink: 0;
+    text-align: center;
+    color: #F3F6FF;
+    font-family: Lato;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 19.2px;
+    text-transform: uppercase;
+}
+
+.home-text > h2{
+    width: 600px;
+    height: 71px;
+    flex-shrink: 0;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;  
+}
+
+header.sticky{
+    padding: 10px 16%;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+
+.tech{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.tech-texto > h3{
+    width: 675px;
+    height: 67px;
+    color: #E28AF0;
+    text-align: left;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.tech-texto > p{
+    width: 431px;
+    height: 225px;
+    color: #F3F6FF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.box{
+    /*height: 100vh;
+    width: 100%;
+    position: relative;*/
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.colunas:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-top: 5px solid #7B207E;
+}
+
+
+.colunas{
+    padding: 45px;
+    background: #110A25;
+    border-top: 5px solid transparent;
+    transition: all .40s ease;
+    cursor: pointer;
+
+}
+
+.colunas > h3{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.colunas > p{
+    color: #FFF;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.conclusao{
+    /*height: 100vh;
+    width: 100%;
+    position: relative;*/
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.texto-conclusao > h3{
+    color: #E28AF0;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.texto-conclusao > p{
+    color: #F3F6FF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+footer{
+    background: linear-gradient(96deg, #7B207E 44.97%, #0F091F 44.97%);
+
+    width: 100%;
+    height: 60px;
+}
+
+footer > p {
+    color: #FFF;
+    text-align: right;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+
